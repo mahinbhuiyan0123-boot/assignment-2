@@ -1,0 +1,622 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+nav,
+.hero,
+.podcast,
+.episode,
+.techwave,
+.youtube,
+.host {
+    max-width: 1000px;
+    margin: auto;
+}
+
+nav {
+    height: 92px;
+    background-color: #1A0B2E;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none
+}
+
+nav>h1>span {
+    color: ;
+}
+
+nav .nav-host {
+    display: flex;
+    gap: 32px;
+}
+
+nav .nav-host a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+nav button {
+    height: 44px;
+    width: 135px;
+    border-radius: 20px;
+    font-weight: 700;
+    border: none;
+    color: #FFFFFF;
+}
+
+nav .hamburger {
+    display: none;
+}
+
+/* hero-banner-section */
+.hero {
+    height: 760px;
+    background-image: url(./assets/hero-bg.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero img {
+    padding-top: px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.hero p {
+    text-align: center;
+    color: #ffffffb1;
+    padding-bottom: 24px;
+}
+
+.hero .spotify {
+    display: flex;
+    justify-content: center;
+    padding-bottom: px;
+    text-align: center;
+
+}
+
+.hero .mic {
+    position: absolute;
+    top: 200px;
+}
+
+.hero h3 {
+    position: absolute;
+    top: 150px;
+    right: 350px;
+    border: 1px solid #00FF88;
+    background-color: #00FF88;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 18px;
+}
+
+.spotify {
+    display: flex;
+    gap: 8px;
+}
+
+.spotify .spoti {
+    width: 200px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.spotify .subscribe {
+    width: 147px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    color: #00FF88;
+    border: 1px solid #00FF88;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.podcast {
+    background-color: #1A0B2E;
+    text-align: center;
+}
+
+.podcast .about-podcast {
+    padding-top: 50px;
+    padding-bottom: 16px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.podcast p {
+    text-wrap: wrap;
+    text-align: center;
+    color: #ffffff9d;
+    line-height: 2;
+    margin: 0 140px;
+    padding-bottom: 36px;
+}
+
+.podcast hr {
+    max-width: 800px;
+    color: #1a0b2e00;
+    margin: 0 auto;
+    opacity: 10%;
+    margin-top: 80px;
+}
+
+.episode {
+    padding-top: 80px;
+    background-color: #1A0B2E
+}
+
+.episode .number {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 255px);
+
+}
+
+.episode .number h1 {
+    font-size: 48px;
+    color: #00FF88;
+    text-align: center;
+}
+
+.episode .number>div {
+    margin: 0px 100px 50px 100px;
+    max-width: 255px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.episode .number .small {
+    color: #ffffff6b;
+    text-align: center;
+    font-size: 16px;
+    max-height: 20px;
+}
+
+.episode .peragraph {
+    padding: 32px 0px 80px 0px;
+}
+
+/* techwave-grid-section */
+.techwave {
+    background-color: #230E3D;
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 1000px;
+    min-height: 650px;
+    padding: 120px 0;
+}
+
+.techwave h1 {
+    padding-bottom: 32px;
+}
+
+.techwave .tech-grid {
+    max-width: 900px;
+    max-height: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: repeat(3, 300px);
+    gap: 20px;
+
+}
+
+.tech-grid p {
+    color: rgba(255, 255, 255, 0.448);
+    font-size: 12px;
+}
+
+.box-1 {
+    padding-top: 30px;
+    margin-bottom: 10px;
+    grid-row: 1 / 3;
+    background-color: #351165;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box-2 {
+    grid-column: 2 / 4;
+    background-color: #351165;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box-3 {
+    grid-column: 2 / 4;
+    background-color: #351165;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box-4 {
+    grid-column: 1 / 3;
+    background-color: #351165;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box-5 {
+    background-color: #351165;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.youtube {
+    background-color: #1A0B2E;
+    color: #FFFFFF;
+
+}
+
+.youtube h1 {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.youtube .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 10px;
+
+}
+
+.youtube .video .link iframe {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+}
+
+.youtube .video .link .pause {
+    position: absolute;
+    border-radius: 50%;
+    right: 50px;
+    z-index: 1;
+
+}
+
+.youtube .video h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.youtube .video p {
+    padding-bottom: 10px;
+    color: #ffffff47;
+}
+
+.youtube .video .clock {
+    padding-bottom: 24px;
+    color: #00FF88;
+    display: flex;
+    gap: 12px;
+}
+
+.youtube .video .youtube .link {
+    display: flex;
+    flex-direction: column;
+    background-color: #250D44;
+
+    border-radius: 20px;
+}
+
+.host {
+    background-color: #1A0B2E;
+    color: #FFFFFF;
+    padding-bottom: 120px;
+}
+
+/* alax-section */
+.host h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.host .fix {
+    width: 85%;
+    background-color: #351165;
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 48px 40px;
+    border-radius: 30px;
+}
+
+.host .fix .social {
+    display: flex;
+    gap: 12px;
+    padding-top: 20px;
+}
+
+.host .fix .kumar p {
+    padding-top: 16px;
+    color: #ffffff5f;
+}
+
+.host .fix {
+    align-items: center;
+}
+
+.host .fix h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+footer {
+    width: 1000px;
+    height: 350px;
+    background-image: url(./assets/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer h1 {
+    padding-top: px;
+    padding-bottom: 32px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    font-size: 48px;
+}
+
+
+footer .more-social {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 32px;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    color: #ffffff79;
+
+}
+
+@media screen and (max-width:576px) {
+
+    nav,
+    .her {
+        max-width: 100%;
+    }
+
+
+    nav {
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 0;
+    }
+
+
+    nav .nav-host,
+    button {
+        display: none;
+    }
+
+    nav .hamburger {
+        display: inline;
+        padding-right: 30px;
+
+    }
+
+    nav>h1 {
+        font-size: medium;
+        display: flex;
+        padding-left: 30px;
+    }
+
+    .hero {
+
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+
+    .hero h1 {
+        font-size: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .hero h3 {
+        top: 90px;
+        right: 140px;
+    }
+
+    .hero .mic>img {
+        width: 80%;
+    }
+
+    .hero .mic {
+        top: 115px;
+        right: 210px;
+    }
+
+    .hero>img {
+        width: 50%;
+    }
+
+    .about-podcast {
+        padding-top: 30px;
+        font-size: 32px;
+    }
+
+    .podcast p {
+
+
+        margin: 0 20px;
+        padding-bottom: 10px;
+    }
+
+    .podcast hr {
+        max-width: 400px;
+        margin-top: 30px;
+    }
+
+    .episode {
+        padding-top: 40px;
+    }
+
+    .episode .number {
+        justify-content: center;
+        width: 100%;
+
+        grid-template-columns: repeat(2, 200px);
+
+    }
+
+    .episode .number h1 {
+        font-size: 48px;
+        color: #00FF88;
+        text-align: center;
+    }
+
+    .episode .number>div {
+        margin: 0px 100px 50px 100px;
+        max-width: 255px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .episode .number .small {
+        color: #ffffff6b;
+        text-align: center;
+        font-size: 16px;
+        max-height: 20px;
+    }
+
+    .episode .peragraph {
+        padding: 32px 0px 80px 0px;
+    }
+
+    .techwave .tech-grid {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .youtube h1 {
+        padding-top: 40px;
+        padding-bottom: 20px;
+
+    }
+
+    .youtube .video {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: left;
+        margin: 0 10px;
+    }
+
+    .youtube .video .link iframe {
+        width: 100%;
+        height: 270px;
+    }
+
+    .host .fix {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .host .fix .social {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .host {
+        padding-bottom: 40px;
+    }
+
+    .host h1 {
+        font-size: 32px;
+        padding-top: 60px;
+    }
+
+    footer {
+        width: 100%;
+        height: 220px;
+
+    }
+
+    footer h1 {
+
+        padding-bottom: 30px;
+
+
+        font-size: 38px;
+    }
+
+
+    footer .more-social {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 24px);
+        gap: 10px;
+        padding-bottom: 24px;
+    }
+
+}
