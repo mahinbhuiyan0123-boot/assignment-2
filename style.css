@@ -119,7 +119,7 @@ nav .hamburger {
     position: absolute;
     top: 25%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translatex(-50%);
 }
 
 .hero .mic img {
@@ -141,6 +141,16 @@ nav .hamburger {
     transform: translatey(80%);
 }
 
+@keyframes spin {
+    form {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .spotify {
     animation: flip 4s ease-in-out infinite;
 }
@@ -159,15 +169,7 @@ nav .hamburger {
     }
 }
 
-@keyframes spin {
-    form {
-        transform: rotatey(0deg);
-    }
 
-    to {
-        transform: rotatey(360deg);
-    }
-}
 
 .spotify {
     display: flex;
@@ -478,7 +480,18 @@ footer p {
 
 }
 
-@media screen and (max-width:576px) {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (orientation: landscape) and (max-width:576px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+    }
 
     nav,
     .her {
@@ -664,13 +677,9 @@ footer p {
     }
 
     footer h1 {
-
         padding-bottom: 30px;
-
-
         font-size: 38px;
     }
-
 
     footer .more-social {
         display: grid;
